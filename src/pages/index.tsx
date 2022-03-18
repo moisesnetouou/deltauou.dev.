@@ -1,5 +1,6 @@
-import { Flex, Heading } from "@chakra-ui/react";
+import { Flex, Heading, Text } from "@chakra-ui/react";
 import Head from "next/head";
+import { Header } from "../components/Header";
 
 export default function Home() {
   return (
@@ -10,8 +11,36 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Flex>
-        <Heading color="white">Ola! Moisés</Heading>
+      <Flex direction="column" minH="100vh" position="relative">
+        <Header />
+
+        <Flex
+          as="main"
+          alignItems="center"
+          margin="0 auto"
+          flex="1"
+          maxW="800px"
+        >
+          <Flex direction="column" w="800px">
+            <Heading
+              bgClip="text"
+              bgGradient="linear-gradient(90deg, rgba(0,182,227,1) 0%, rgba(61,252,232,1) 25%)"
+              fontSize="6xl"
+            >
+              Moisés Neto
+            </Heading>
+            <Text fontSize="xl" fontWeight="200">
+              Desenvolvedor Front End
+            </Text>
+
+            <Flex borderLeft="1px solid #FFFF" ml="1rem" mt="2rem">
+              <Text as="em" ml="1rem" fontSize="lg" lineHeight="2">
+                Só teme a Escuridão, quem não possui Luz em si mesmo. Só inveja
+                o Fogo, quem a muito não passa de cinzas. - Dark Souls
+              </Text>
+            </Flex>
+          </Flex>
+        </Flex>
       </Flex>
     </>
   );

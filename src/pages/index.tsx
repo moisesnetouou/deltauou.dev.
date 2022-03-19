@@ -1,6 +1,8 @@
 import { Flex, Heading, Text } from "@chakra-ui/react";
 import Head from "next/head";
+
 import { Header } from "../components/Header";
+import { PoppoverInfo } from "../components/PoppoverInfo";
 
 export default function Home() {
   return (
@@ -29,9 +31,14 @@ export default function Home() {
             >
               Moisés Neto
             </Heading>
-            <Text fontSize="xl" fontWeight="200">
-              Desenvolvedor Front End
-            </Text>
+
+            <Flex alignItems="center">
+              <Text fontSize="xl" mr="2" fontWeight="200">
+                Desenvolvedor Front End
+              </Text>
+
+              <PoppoverInfo />
+            </Flex>
 
             <Flex borderLeft="1px solid #FFFF" ml="1rem" mt="2rem">
               <Text as="em" ml="1rem" fontSize="lg" lineHeight="2">

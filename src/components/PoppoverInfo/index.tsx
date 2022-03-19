@@ -12,7 +12,7 @@ import { AiFillInfoCircle } from "react-icons/ai";
 
 export function PoppoverInfo() {
   return (
-    <Popover placement="right">
+    <Popover>
       <PopoverTrigger>
         <IconButton
           aria-label="Icone de info"

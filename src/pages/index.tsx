@@ -49,6 +49,8 @@ export default function Home() {
                 fontSize="lg"
                 lineHeight="2"
                 fontWeight="600"
+                bgClip="text"
+                bgGradient="linear-gradient(90deg, rgba(0,182,227,1) 0%, rgba(61,252,232,1) 25%)"
               >
                 <ReactTypingEffect
                   typingDelay={100}

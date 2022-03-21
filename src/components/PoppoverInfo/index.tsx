@@ -35,6 +35,9 @@ export function PoppoverInfo() {
         boxShadow="0 8px 32px 0 rgba( 255, 255, 255, 0.25 )"
         backdropFilter="blur( 6px )"
         borderColor="transparent"
+        _focus={{
+          boxShadow: "0 8px 32px 0 rgba( 255, 255, 255, 0.25 )",
+        }}
       >
         <PopoverHeader fontWeight="semibold">
           Desenvolvedor Front End

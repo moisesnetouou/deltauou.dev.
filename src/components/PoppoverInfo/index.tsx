@@ -18,7 +18,7 @@ export function PoppoverInfo() {
           aria-label="Icone de info"
           size="xs"
           fontSize="md"
-          color="#0E6DB4"
+          color="#3DFCE8"
           bg="transparent"
           icon={<AiFillInfoCircle />}
           transitionDuration="0.4s"
@@ -28,10 +28,13 @@ export function PoppoverInfo() {
         />
       </PopoverTrigger>
       <PopoverContent
-        color="#010101"
-        bg="rgba( 255, 255, 255, 0.25 )"
-        boxShadow="0 8px 32px 0 rgba( 31, 38, 135, 0.37 )"
+        color="white"
+        fontWeight="600"
+        fontSize="lg"
+        bg="rgba( 14, 109, 180, 0.25 )"
+        boxShadow="0 8px 32px 0 rgba( 255, 255, 255, 0.25 )"
         backdropFilter="blur( 6px )"
+        borderColor="transparent"
       >
         <PopoverHeader fontWeight="semibold">
           Desenvolvedor Front End

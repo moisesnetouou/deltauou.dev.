@@ -44,9 +44,10 @@ export function PoppoverInfo() {
         </PopoverHeader>
         <PopoverArrow />
         <PopoverCloseButton />
-        <PopoverBody>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore.
+        <PopoverBody textAlign="justify" fontSize="sm">
+          É quem desenvolve a aplicação com a qual o usuário irá interagir
+          diretamente, seja em softwares, sites, aplicativos, etc. Ele
+          desenvolve a parte visual, e interações com o Back End.
         </PopoverBody>
       </PopoverContent>
     </Popover>

@@ -1,6 +1,9 @@
 import { Flex, Heading, Text } from "@chakra-ui/react";
 import Head from "next/head";
+import ReactTypingEffect from "react-typing-effect";
+import { frases } from "../data/frases";
 import { Header } from "../components/Header";
+import { PoppoverInfo } from "../components/PoppoverInfo";
 
 export default function Home() {
   return (
@@ -29,14 +32,32 @@ export default function Home() {
             >
               Moisés Neto
             </Heading>
-            <Text fontSize="xl" fontWeight="200">
-              Desenvolvedor Front End
-            </Text>
+
+            <Flex alignItems="center">
+              <Text fontSize="xl" mr="2" fontWeight="200">
+                Desenvolvedor Front End
+              </Text>
+
+              <PoppoverInfo />
+            </Flex>
 
             <Flex borderLeft="1px solid #FFFF" ml="1rem" mt="2rem">
-              <Text as="em" ml="1rem" fontSize="lg" lineHeight="2">
-                Só teme a Escuridão, quem não possui Luz em si mesmo. Só inveja
-                o Fogo, quem a muito não passa de cinzas. - Dark Souls
+              <Text
+                d="block"
+                as="em"
+                ml="1rem"
+                fontSize="lg"
+                lineHeight="2"
+                fontWeight="600"
+                bgClip="text"
+                bgGradient="linear-gradient(90deg, rgba(0,182,227,1) 0%, rgba(61,252,232,1) 25%)"
+              >
+                <ReactTypingEffect
+                  typingDelay={100}
+                  speed={100}
+                  eraseDelay={500}
+                  text={frases}
+                />
               </Text>
             </Flex>
           </Flex>

@@ -1,9 +1,10 @@
-import { Flex, Heading, Text } from "@chakra-ui/react";
+import { Flex, Heading, Image, Text } from "@chakra-ui/react";
 import Head from "next/head";
 import ReactTypingEffect from "react-typing-effect";
 import { frases } from "../data/frases";
 import { Header } from "../components/Header";
 import { PoppoverInfo } from "../components/PoppoverInfo";
+import { HeroSection } from "../components/HeroSection";
 
 export default function Home() {
   return (
@@ -17,51 +18,7 @@ export default function Home() {
       <Flex direction="column" minH="100vh" position="relative">
         <Header />
 
-        <Flex
-          as="main"
-          alignItems="center"
-          margin="0 auto"
-          flex="1"
-          maxW="800px"
-        >
-          <Flex direction="column" w="800px">
-            <Heading
-              bgClip="text"
-              bgGradient="linear-gradient(90deg, rgba(0,182,227,1) 0%, rgba(61,252,232,1) 25%)"
-              fontSize="6xl"
-            >
-              Moisés Neto
-            </Heading>
-
-            <Flex alignItems="center">
-              <Text fontSize="xl" mr="2" fontWeight="200">
-                Desenvolvedor Front End
-              </Text>
-
-              <PoppoverInfo />
-            </Flex>
-
-            <Flex borderLeft="1px solid #FFFF" ml="1rem" mt="2rem">
-              <Text
-                d="block"
-                as="em"
-                ml="1rem"
-                fontSize="lg"
-                lineHeight="2"
-                fontWeight="600"
-                bgClip="text"
-                bgGradient="linear-gradient(90deg, rgba(0,182,227,1) 0%, rgba(61,252,232,1) 25%)"
-              >
-                <ReactTypingEffect
-                  typingDelay={100}
-                  speed={100}
-                  eraseDelay={500}
-                  text={frases}
-                />
-              </Text>
-            </Flex>
-          </Flex>
-        </Flex>
+        <HeroSection />
       </Flex>
     </>
   );

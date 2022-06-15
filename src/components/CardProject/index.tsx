@@ -17,7 +17,7 @@ interface CardProjectProps {
 export function CardProject({ data }: CardProjectProps) {
   return (
     <Flex
-      border="1px solid #241F42"
+      border="1px solid rgba( 255, 255, 255, 0.18 )"
       w="100%"
       h={{
         base: "100%",
@@ -31,6 +31,9 @@ export function CardProject({ data }: CardProjectProps) {
         lg: "row",
       }}
       gap="2"
+      bg="rgba( 5, 3, 13, 0.3 )"
+      boxShadow="0 8px 32px 0 rgba( 31, 38, 135, 0.37 )"
+      backdropFilter="blur( 12.5px )"
     >
       <Flex
         w={{

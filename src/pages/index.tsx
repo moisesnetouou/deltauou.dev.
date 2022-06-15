@@ -1,9 +1,9 @@
-import { Flex, Heading, Image, Text } from "@chakra-ui/react";
+import { Flex } from "@chakra-ui/react";
 import Head from "next/head";
-import ReactTypingEffect from "react-typing-effect";
-import { frases } from "../data/frases";
+// import ReactTypingEffect from "react-typing-effect";
+// import { frases } from "../data/frases";
 import { Header } from "../components/Header";
-import { PoppoverInfo } from "../components/PoppoverInfo";
+// import { PoppoverInfo } from "../components/PoppoverInfo";
 import { HeroSection } from "../components/HeroSection";
 
 export default function Home() {

@@ -36,9 +36,36 @@ export function Header() {
         </Flex>
 
         <Stack direction="row" spacing="10">
-          <Link href="/sobre">Sobre</Link>
-          <Link href="/projetos">Projetos</Link>
-          <Link href="/skills">Tecnologias</Link>
+          <Link
+            href="/sobre"
+            _hover={{
+              bgClip: "text",
+              bgGradient:
+                "linear-gradient(90deg, rgba(0,182,227,1) 0%, rgba(61,252,232,1) 25%)",
+            }}
+          >
+            Sobre
+          </Link>
+          <Link
+            href="/projetos"
+            _hover={{
+              bgClip: "text",
+              bgGradient:
+                "linear-gradient(90deg, rgba(0,182,227,1) 0%, rgba(61,252,232,1) 25%)",
+            }}
+          >
+            Projetos
+          </Link>
+          <Link
+            href="/skills"
+            _hover={{
+              bgClip: "text",
+              bgGradient:
+                "linear-gradient(90deg, rgba(0,182,227,1) 0%, rgba(61,252,232,1) 25%)",
+            }}
+          >
+            Tecnologias
+          </Link>
         </Stack>
       </Flex>
     </Flex>

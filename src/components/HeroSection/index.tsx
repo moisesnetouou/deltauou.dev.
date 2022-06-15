@@ -1,4 +1,4 @@
-import { Flex, Heading, Image, Text } from "@chakra-ui/react";
+import { Flex, Heading, Text } from "@chakra-ui/react";
 import { PoppoverInfo } from "../PoppoverInfo";
 
 export function HeroSection() {

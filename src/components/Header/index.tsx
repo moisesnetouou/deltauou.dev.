@@ -9,10 +9,28 @@ export function Header() {
       h="5rem"
       top="0"
     >
-      <Flex w="1420px" m="0 auto" justify="space-between" alignItems="center">
+      <Flex
+        w={{
+          base: "320px",
+          sm: "320px",
+          md: "600px",
+          lg: "900px",
+          xl: "1120px",
+        }}
+        m="0 auto"
+        justify="space-between"
+        alignItems="center"
+      >
         <Flex align="center" gap="2">
-          <Image src="/images/logo.png" alt="Logo do site" w="5rem" h="3rem" />
-          <Text fontSize="xl" fontWeight="600">
+          <Link as="a" href="/">
+            <Image
+              src="/images/logo.png"
+              alt="Logo do site"
+              w="5rem"
+              h="3rem"
+            />
+          </Link>
+          <Text fontSize="xl" fontWeight="600" textDecor="none">
             Delta | Dev
           </Text>
         </Flex>

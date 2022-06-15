@@ -1,6 +1,15 @@
 import { extendTheme } from "@chakra-ui/react";
 
+const breakpoints = {
+  sm: "320px",
+  md: "600px",
+  lg: "900px",
+  xl: "1120px",
+  "2xl": "1420px",
+};
+
 const customTheme = extendTheme({
+  breakpoints,
   fonts: {
     body: "Sora, system-ui, sans-serif",
     heading: "Sora, Sora, system-ui, sans-serif",

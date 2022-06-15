@@ -6,31 +6,55 @@ export function HeroSection() {
     <Flex
       as="main"
       alignItems="center"
-      margin="0 auto"
-      flex="1"
-      h="100vh"
-      w="1420px"
+      mx="auto"
+      minH="100vh"
+      w={{
+        base: "320px",
+        md: "600px",
+        lg: "900px",
+        xl: "1120px",
+      }}
       justifyContent="space-between"
     >
-      <Flex direction="column" w="50%">
+      <Flex
+        direction="column"
+        w={{
+          base: "100%",
+          sm: "100%",
+          md: "100%",
+          lg: "22rem",
+          xl: "28.12rem",
+        }}
+      >
         <Heading
           bgClip="text"
           bgGradient="linear-gradient(90deg, rgba(0,182,227,1) 0%, rgba(61,252,232,1) 25%)"
-          fontSize="6xl"
+          fontSize={{ base: "3xl", md: "6xl" }}
         >
           Moisés Neto
         </Heading>
 
         <Flex flexDirection="column">
           <Flex alignItems="center">
-            <Text fontSize="2xl" mr="2" fontWeight="400">
+            <Text fontSize={{ base: "xl", md: "2xl" }} mr="2" fontWeight="400">
               Desenvolvedor Front End
             </Text>
 
             <PoppoverInfo />
           </Flex>
 
-          <Text w="28.12rem" mt="1rem" fontSize="xl" fontWeight="200">
+          <Text
+            w={{
+              base: "15rem",
+              sm: "15rem",
+              md: "100%",
+              lg: "22rem",
+              xl: "28.12rem",
+            }}
+            mt="1rem"
+            fontSize={{ base: "md", md: "xl" }}
+            fontWeight="200"
+          >
             Atualmente focando em me especializar em desenvolvimento de
             sistemas, tanto front como back.
           </Text>
@@ -57,12 +81,28 @@ export function HeroSection() {
             </Flex> */}
       </Flex>
 
-      <Flex h="31.25rem">
+      {/* <Flex
+        mt={{ base: "5rem", lg: "0" }}
+        h={{
+          base: "15rem",
+          sm: "15rempx",
+          md: "18rem",
+          lg: "20rem",
+          xl: "25rem",
+        }}
+        w={{
+          base: "15rem",
+          sm: "15rempx",
+          md: "30rem",
+          lg: "35em",
+          xl: "40rem",
+        }}
+      >
         <Image
           src="/images/hero-image.png"
           alt="Imagens de projeto enfileirados"
         />
-      </Flex>
+      </Flex> */}
     </Flex>
   );
 }

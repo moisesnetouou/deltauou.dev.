@@ -15,7 +15,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Flex direction="column" minH="100vh" position="relative">
+      <Flex direction="column" position="relative">
         <Header />
 
         <HeroSection />

@@ -1,5 +1,7 @@
-import { Flex, Heading, Image, Text, Wrap, WrapItem } from "@chakra-ui/react";
+import { Flex, Heading } from "@chakra-ui/react";
+import { CardProject } from "../components/CardProject";
 import { Header } from "../components/Header";
+import { personalProjects } from "../data/personalProjects";
 
 export default function Projetos() {
   return (
@@ -18,17 +20,10 @@ export default function Projetos() {
         flexDirection="column"
       >
         <Heading>Projetos Pessoais</Heading>
-        <Flex>
-          <Flex
-            border="1px solid #241F42"
-            w="100%"
-            h="345px"
-            justifyContent="space-between"
-            padding="2rem"
-          >
-            <Flex w="470px">teste</Flex>
-            <Flex w="451px">teste</Flex>
-          </Flex>
+        <Flex flexDirection="column" gap="10" py="2rem">
+          {personalProjects.map((item) => (
+            <CardProject key={item.id} data={item} />
+          ))}
         </Flex>
 
         <Heading>Eventos</Heading>

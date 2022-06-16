@@ -3,6 +3,8 @@ import { BsGithub } from "react-icons/bs";
 import { GrDeploy } from "react-icons/gr";
 
 interface CardProjectProps {
+  bgGradient: string;
+  headerTextColor: string;
   data: {
     name: string;
     image: string;
@@ -14,14 +16,18 @@ interface CardProjectProps {
   };
 }
 
-export function CardProject({ data }: CardProjectProps) {
+export function CardProject({
+  bgGradient,
+  headerTextColor,
+  data,
+}: CardProjectProps) {
   return (
     <Flex
       border="1px solid rgba( 255, 255, 255, 0.18 )"
       w="100%"
       h={{
         base: "100%",
-        lg: "345px",
+        lg: "360px",
       }}
       justifyContent="space-between"
       padding={{ base: "1.5rem", lg: "2rem" }}
@@ -31,9 +37,11 @@ export function CardProject({ data }: CardProjectProps) {
         lg: "row",
       }}
       gap="2"
-      bg="rgba( 5, 3, 13, 0.3 )"
+      // bg="rgba( 5, 3, 13, 0.3 )"
       boxShadow="0 8px 32px 0 rgba( 31, 38, 135, 0.37 )"
       backdropFilter="blur( 12.5px )"
+      position="relative"
+      bg={bgGradient}
     >
       <Flex
         w={{
@@ -46,12 +54,14 @@ export function CardProject({ data }: CardProjectProps) {
       >
         <Image src={data.image} alt="Messier One" />
       </Flex>
+
       <Flex
         w={{
           base: "100%",
           lg: "530px",
         }}
         flexDirection="column"
+        pb="1.5rem"
       >
         <Heading
           mt={{
@@ -64,7 +74,7 @@ export function CardProject({ data }: CardProjectProps) {
             lg: "3xl",
           }}
           bgClip="text"
-          bgGradient="linear-gradient(90deg, rgba(0,182,227,1) 0%, rgba(61,252,232,1) 25%)"
+          bgGradient={headerTextColor}
         >
           {data.name}
         </Heading>
@@ -77,6 +87,7 @@ export function CardProject({ data }: CardProjectProps) {
             md: "md",
             lg: "md",
           }}
+          fontWeight="bold"
         >
           {data.description}
         </Text>
@@ -97,6 +108,7 @@ export function CardProject({ data }: CardProjectProps) {
             md: "md",
             lg: "md",
           }}
+          fontWeight="bold"
         >
           {data.technologies}
         </Text>
@@ -110,6 +122,7 @@ export function CardProject({ data }: CardProjectProps) {
           Objetivo
         </Heading>
         <Text
+          fontWeight="bold"
           w="100%"
           fontSize={{
             base: "sm",
@@ -119,36 +132,42 @@ export function CardProject({ data }: CardProjectProps) {
         >
           {data.objective}
         </Text>
+      </Flex>
+      <Flex
+        gap="5"
+        mt="1"
+        justifyContent="end"
+        position="absolute"
+        bottom="1rem"
+        right="1rem"
+      >
+        <Link
+          href={data.deploy}
+          isExternal
+          bg="white"
+          borderRadius="full"
+          w="1.5rem"
+          h="1.5rem"
+          alignItems="center"
+          justifyContent="center"
+          d="flex"
+        >
+          <Icon as={GrDeploy} color="black" />
+        </Link>
 
-        <Flex gap="5" mt="1" justifyContent="end">
-          <Link
-            href={data.deploy}
-            isExternal
-            bg="white"
-            borderRadius="full"
-            w="1.5rem"
-            h="1.5rem"
-            alignItems="center"
-            justifyContent="center"
-            d="flex"
-          >
-            <Icon as={GrDeploy} color="black" />
-          </Link>
-
-          <Link
-            href={data.github}
-            isExternal
-            bg="white"
-            borderRadius="full"
-            w="1.5rem"
-            h="1.5rem"
-            alignItems="center"
-            justifyContent="center"
-            d="flex"
-          >
-            <Icon as={BsGithub} color="black" />
-          </Link>
-        </Flex>
+        <Link
+          href={data.github}
+          isExternal
+          bg="white"
+          borderRadius="full"
+          w="1.5rem"
+          h="1.5rem"
+          alignItems="center"
+          justifyContent="center"
+          d="flex"
+        >
+          <Icon as={BsGithub} color="black" />
+        </Link>
       </Flex>
     </Flex>
   );

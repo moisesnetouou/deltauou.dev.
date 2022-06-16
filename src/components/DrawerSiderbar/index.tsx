@@ -27,8 +27,11 @@ export function DrawerSiderbar() {
         right="2rem"
         bgGradient="linear-gradient(90deg, rgba(0,182,227,1) 0%, rgba(61,252,232,1) 25%)"
         onClick={onOpen}
+        borderRadius="full"
+        w="2.5rem"
+        h="2.5rem"
       >
-        <Icon as={GrMenu} fontSize="xl" />
+        <Icon as={GrMenu} fontSize="md" />
       </Button>
       <Drawer isOpen={isOpen} placement="right" onClose={onClose}>
         <DrawerOverlay />
@@ -91,8 +94,8 @@ export function DrawerSiderbar() {
               isExternal
               bg="white"
               borderRadius="full"
-              w="1.5rem"
-              h="1.5rem"
+              w="2rem"
+              h="2rem"
               alignItems="center"
               justifyContent="center"
               d="flex"
@@ -105,8 +108,8 @@ export function DrawerSiderbar() {
               isExternal
               bg="white"
               borderRadius="full"
-              w="1.5rem"
-              h="1.5rem"
+              w="2rem"
+              h="2rem"
               alignItems="center"
               justifyContent="center"
               d="flex"
@@ -119,13 +122,13 @@ export function DrawerSiderbar() {
               isExternal
               bg="white"
               borderRadius="full"
-              w="1.5rem"
-              h="1.5rem"
+              w="2rem"
+              h="2rem"
               alignItems="center"
               justifyContent="center"
               d="flex"
             >
-              <Icon as={AiFillInstagram} color="#E1306C" />
+              <Icon as={AiFillInstagram} color="#E1306C" fontSize="1.5rem" />
             </Link>
           </DrawerFooter>
         </DrawerContent>

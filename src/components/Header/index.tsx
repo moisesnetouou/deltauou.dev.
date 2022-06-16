@@ -57,7 +57,7 @@ export function Header() {
           >
             Projetos
           </Link>
-          <Link
+          {/* <Link
             href="/skills"
             _hover={{
               bgClip: "text",
@@ -66,7 +66,7 @@ export function Header() {
             }}
           >
             Tecnologias
-          </Link>
+          </Link> */}
         </Stack>
       </Flex>
     </Flex>

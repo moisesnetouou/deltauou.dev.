@@ -75,7 +75,7 @@ export function DrawerSiderbar() {
               >
                 Projetos
               </Link>
-              <Link
+              {/* <Link
                 href="/skills"
                 _hover={{
                   bgClip: "text",
@@ -84,7 +84,7 @@ export function DrawerSiderbar() {
                 }}
               >
                 Tecnologias
-              </Link>
+              </Link> */}
             </Stack>
           </DrawerBody>
 

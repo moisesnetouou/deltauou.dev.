@@ -11,10 +11,9 @@ export default function Sobre() {
           lg: "900px",
           xl: "1120px",
         }}
-        mt={{ base: "6rem", md: "10rem" }}
+        mt={{ base: "5rem", md: "10rem" }}
         mx="auto"
         mb="2rem"
-        margin="10rem auto 0"
         justifyContent="space-between"
         alignItems={{ base: "none", lg: "center" }}
         flexDir={{

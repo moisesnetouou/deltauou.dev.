@@ -1,9 +1,5 @@
 import { Flex } from "@chakra-ui/react";
 import Head from "next/head";
-// import ReactTypingEffect from "react-typing-effect";
-// import { frases } from "../data/frases";
-import { Header } from "../components/Header";
-// import { PoppoverInfo } from "../components/PoppoverInfo";
 import { HeroSection } from "../components/HeroSection";
 
 export default function Home() {
@@ -15,9 +11,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Flex direction="column" position="relative">
-        <Header />
-
+      <Flex direction="column" position="relative" w="100%">
         <HeroSection />
       </Flex>
     </>

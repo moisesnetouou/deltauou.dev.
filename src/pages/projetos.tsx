@@ -1,12 +1,10 @@
 import { Flex, Heading } from "@chakra-ui/react";
 import { CardProject } from "../components/CardProject";
-import { Header } from "../components/Header";
 import { personalProjects } from "../data/personalProjects";
 
 export default function Projetos() {
   return (
     <Flex direction="column" minH="100vh" position="relative">
-      <Header />
       <Flex
         mt="10rem"
         w={{

@@ -3,6 +3,7 @@ import { Flex, Image, Link, Stack, Text } from "@chakra-ui/react";
 export function Header() {
   return (
     <Flex
+      d={{ base: "none", md: "flex" }}
       borderBottom="1px solid #241F42"
       position="absolute"
       w="100%"

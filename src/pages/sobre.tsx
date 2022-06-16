@@ -1,10 +1,8 @@
 import { Flex, Heading, Image, Text } from "@chakra-ui/react";
-import { Header } from "../components/Header";
 
 export default function Sobre() {
   return (
     <Flex direction="column" minH="100vh" position="relative">
-      <Header />
       <Flex
         w={{
           base: "320px",

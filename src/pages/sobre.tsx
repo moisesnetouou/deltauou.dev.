@@ -37,7 +37,7 @@ export default function Sobre() {
             bgClip="text"
             bgGradient="linear-gradient(90deg, rgba(0,182,227,1) 0%, rgba(61,252,232,1) 25%)"
           >
-            Olá, me chamo Moisés!
+            Olá! me chamo Moisés.
           </Heading>
           <Text textAlign="justify">
             Tenho 24 anos, atualmente faço parte do time de desenvolvedores da

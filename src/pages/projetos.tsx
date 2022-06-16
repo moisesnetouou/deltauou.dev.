@@ -2,6 +2,7 @@ import { Flex, Heading } from "@chakra-ui/react";
 import { CardProject } from "../components/CardProject";
 import { personalProjects } from "../data/personalProjects";
 import { eventProjects } from "../data/eventProjects";
+import { igniteProjects } from "../data/igniteProjects";
 
 export default function Projetos() {
   return (
@@ -46,6 +47,21 @@ export default function Projetos() {
             <CardProject
               bgGradient="conic-gradient(from -11.05deg at 50% 71.93%,#9c3cf7 0deg,#70b1ff 54.64deg,#bbb0ff 65.63deg,#56b3ff 73.72deg,#7b70ff 119.43deg,#3654ff 193.12deg,rgba(37,54,71,.87) 226.37deg,#164d8e 262.5deg,#1a62b9 306.49deg,#1821ff 320.77deg,rgba(112,177,255,.5) 326.27deg,#70b1ff 337.21deg,#9c3cf7 1turn)"
               headerTextColor="linear-gradient(90deg, rgba(207,22,219,1) 16%, rgba(76,77,62,1) 35%)"
+              key={item.id}
+              data={item}
+            />
+          ))}
+        </Flex>
+
+        <Heading my="2rem" fontSize={{ base: "2xl", md: "3xl" }}>
+          Eventos
+        </Heading>
+        <Flex flexDirection="column" gap="10" borderRadius="5">
+          {igniteProjects.map((item) => (
+            <CardProject
+              bgGradient="conic-gradient(from -11.05deg at 50% 71.93%,#9b4be5 0deg,#78ff83 54.64deg,#bbb0ff 65.63deg,#56b3ff 73.72deg,#fff170 119.43deg,#ff3672 193.12deg,rgb(75 120 165 / 87%) 226.37deg,#164d8e 262.5deg,#1a62b9 306.49deg,#1821ff 320.77deg,#e770ff7f 326.27deg,#705987 337.21deg,#9c3cf7 1turn);
+            }"
+              headerTextColor="linear-gradient(90deg, rgb(231 218 31) 0%, rgb(62 225 225) 35%);"
               key={item.id}
               data={item}
             />

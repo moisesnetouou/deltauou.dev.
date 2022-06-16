@@ -37,7 +37,6 @@ export function CardProject({
         lg: "row",
       }}
       gap="2"
-      // bg="rgba( 5, 3, 13, 0.3 )"
       boxShadow="0 8px 32px 0 rgba( 31, 38, 135, 0.37 )"
       backdropFilter="blur( 12.5px )"
       position="relative"
@@ -141,19 +140,21 @@ export function CardProject({
         bottom="1rem"
         right="1rem"
       >
-        <Link
-          href={data.deploy}
-          isExternal
-          bg="white"
-          borderRadius="full"
-          w="1.5rem"
-          h="1.5rem"
-          alignItems="center"
-          justifyContent="center"
-          d="flex"
-        >
-          <Icon as={GrDeploy} color="black" />
-        </Link>
+        {data.deploy && (
+          <Link
+            href={data.deploy}
+            isExternal
+            bg="white"
+            borderRadius="full"
+            w="1.5rem"
+            h="1.5rem"
+            alignItems="center"
+            justifyContent="center"
+            d="flex"
+          >
+            <Icon as={GrDeploy} color="black" />
+          </Link>
+        )}
 
         <Link
           href={data.github}

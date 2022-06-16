@@ -22,4 +22,15 @@ export const eventProjects: EventProjectsData[] = [
     github: "https://github.com/moisesnetouou/nlw-return",
     deploy: "https://nlw-return-khaki.vercel.app/",
   },
+  {
+    id: "2",
+    image: "/images/project/plant-manager.png",
+    name: "PlantManager",
+    description: "Uma aplicação que lembra o usuário a regar suas plantas",
+    technologies: "React Native, Expo, Lottie, Axios, Date-fns",
+    objective:
+      "Aprender como criar uma aplicação que salva as plantas do usuário, para que com de acordo com o tipo ele seja lembrado de tempo em tempo através da notificação do celular.",
+    github: "https://github.com/moisesnetouou/plantmanager",
+    deploy: "",
+  },
 ];

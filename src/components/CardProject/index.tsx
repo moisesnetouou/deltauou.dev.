@@ -4,7 +4,9 @@ import { GrDeploy } from "react-icons/gr";
 
 interface CardProjectProps {
   bgGradient: string;
-  headerTextColor: string;
+  headerTextGradientColor: string;
+  textHeaderColor: string;
+  textColor: string;
   data: {
     name: string;
     image: string;
@@ -18,7 +20,9 @@ interface CardProjectProps {
 
 export function CardProject({
   bgGradient,
-  headerTextColor,
+  headerTextGradientColor,
+  textHeaderColor,
+  textColor,
   data,
 }: CardProjectProps) {
   return (
@@ -51,7 +55,7 @@ export function CardProject({
         borderRadius="10"
         overflow="hidden"
       >
-        <Image src={data.image} alt="Messier One" />
+        <Image src={data.image} alt="Messier One" w="100%" />
       </Flex>
 
       <Flex
@@ -69,11 +73,11 @@ export function CardProject({
           }}
           mb="1"
           fontSize={{
-            base: "xl",
+            base: "2xl",
             lg: "3xl",
           }}
           bgClip="text"
-          bgGradient={headerTextColor}
+          bgGradient={headerTextGradientColor}
         >
           {data.name}
         </Heading>
@@ -87,6 +91,7 @@ export function CardProject({
             lg: "md",
           }}
           fontWeight="bold"
+          color={textColor}
         >
           {data.description}
         </Text>
@@ -96,6 +101,7 @@ export function CardProject({
             base: "md",
             lg: "xl",
           }}
+          color={textHeaderColor}
         >
           Tecnologia
         </Heading>
@@ -108,11 +114,13 @@ export function CardProject({
             lg: "md",
           }}
           fontWeight="bold"
+          color={textColor}
         >
           {data.technologies}
         </Text>
 
         <Heading
+          color={textHeaderColor}
           fontSize={{
             base: "md",
             lg: "xl",
@@ -128,6 +136,7 @@ export function CardProject({
             md: "md",
             lg: "md",
           }}
+          color={textColor}
         >
           {data.objective}
         </Text>

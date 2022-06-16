@@ -11,6 +11,9 @@ export default function Sobre() {
           lg: "900px",
           xl: "1120px",
         }}
+        mt={{ base: "6rem", md: "10rem" }}
+        mx="auto"
+        mb="2rem"
         margin="10rem auto 0"
         justifyContent="space-between"
         alignItems={{ base: "none", lg: "center" }}
@@ -34,7 +37,7 @@ export default function Sobre() {
             bgClip="text"
             bgGradient="linear-gradient(90deg, rgba(0,182,227,1) 0%, rgba(61,252,232,1) 25%)"
           >
-            Olá, me chamo Moisés
+            Olá, me chamo Moisés!
           </Heading>
           <Text textAlign="justify">
             Tenho 24 anos, atualmente faço parte do time de desenvolvedores da
@@ -43,7 +46,7 @@ export default function Sobre() {
 
           <Text textAlign="justify">
             A 2 anos venho focando em me especializar cada vez mais em
-            desenvolimento de sistemas. Atualmente sou desenvolvedor Front End
+            desenvolvimento de sistemas. Atualmente sou desenvolvedor Front End
             na ClickIp, utilizo React, Next, Styled Components e Chakra UI para
             criar as aplicações.
           </Text>

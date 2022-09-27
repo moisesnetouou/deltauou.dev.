@@ -1,7 +1,7 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import React, { ReactNode } from "react";
-import { KBarProvider, KBarPortal, useMatches, KBarResults } from "kbar";
-import { AiOutlineCopy, AiOutlineMail } from "react-icons/ai";
+import React, { ReactNode } from 'react';
+import { KBarProvider, KBarPortal, useMatches, KBarResults } from 'kbar';
+import { AiOutlineCopy, AiOutlineMail } from 'react-icons/ai';
 import {
   Box,
   Animator,
@@ -13,7 +13,7 @@ import {
   ActionRow,
   Kbd,
   Shortcut,
-} from "./styles";
+} from './styles';
 
 const ResultItem = React.forwardRef<any>(({ action, active }: any, ref) => {
   return (
@@ -42,7 +42,7 @@ function RenderResults() {
     <KBarResults
       items={results}
       onRender={({ item, active }) =>
-        typeof item === "string" ? (
+        typeof item === 'string' ? (
           <GroupName>{item}</GroupName>
         ) : (
           <ResultItem
@@ -59,21 +59,21 @@ function RenderResults() {
 export default function CommandBar({ children }: { children: ReactNode }) {
   const actions = [
     {
-      id: "copy",
-      name: "Copiar URL",
-      shortcut: ["u"],
-      keywords: "copy-url",
-      section: "Geral",
+      id: 'copy',
+      name: 'Copiar URL',
+      shortcut: ['u'],
+      keywords: 'copy-url',
+      section: 'Geral',
       perform: () => navigator.clipboard.writeText(window.location.href),
       icon: <AiOutlineCopy />,
     },
     {
-      id: "email",
-      name: "Enviar Email",
-      shortcut: ["e"],
-      keywords: "send-email",
-      section: "Geral",
-      perform: () => window.open("mailto:moisesnetored@gmail.com", "_blank"),
+      id: 'email',
+      name: 'Enviar Email',
+      shortcut: ['e'],
+      keywords: 'send-email',
+      section: 'Geral',
+      perform: () => window.open('mailto:moisesnetored@gmail.com', '_blank'),
       icon: <AiOutlineMail />,
     },
   ];

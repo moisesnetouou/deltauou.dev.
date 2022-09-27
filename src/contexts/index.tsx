@@ -1,8 +1,8 @@
-import { ReactNode } from "react";
-import { ChakraProvider } from "@chakra-ui/react";
+import { ReactNode } from 'react';
+import { ChakraProvider } from '@chakra-ui/react';
 
-import CommandBar from "./CommandBar";
-import theme from "../styles/theme";
+import CommandBar from './CommandBar';
+import theme from '../styles/theme';
 
 export default function AppProvider({ children }: { children: ReactNode }) {
   return (

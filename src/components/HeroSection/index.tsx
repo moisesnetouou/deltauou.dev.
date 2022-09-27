@@ -1,5 +1,5 @@
-import { Flex, Heading, Text } from "@chakra-ui/react";
-import { PoppoverInfo } from "../PoppoverInfo";
+import { Flex, Heading, Text } from '@chakra-ui/react';
+import { PoppoverInfo } from '../PoppoverInfo';
 
 export function HeroSection() {
   return (
@@ -9,34 +9,34 @@ export function HeroSection() {
       mx="auto"
       minH="100vh"
       w={{
-        base: "320px",
-        md: "600px",
-        lg: "900px",
-        xl: "1120px",
+        base: '320px',
+        md: '600px',
+        lg: '900px',
+        xl: '1120px',
       }}
       justifyContent="space-between"
     >
       <Flex
         direction="column"
         w={{
-          base: "100%",
-          sm: "100%",
-          md: "100%",
-          lg: "22rem",
-          xl: "28.12rem",
+          base: '100%',
+          sm: '100%',
+          md: '100%',
+          lg: '22rem',
+          xl: '28.12rem',
         }}
       >
         <Heading
           bgClip="text"
           bgGradient="linear-gradient(90deg, rgba(0,182,227,1) 0%, rgba(61,252,232,1) 25%)"
-          fontSize={{ base: "3xl", md: "6xl" }}
+          fontSize={{ base: '3xl', md: '6xl' }}
         >
           Moisés Neto
         </Heading>
 
         <Flex flexDirection="column">
           <Flex alignItems="center">
-            <Text fontSize={{ base: "xl", md: "2xl" }} mr="2" fontWeight="400">
+            <Text fontSize={{ base: 'xl', md: '2xl' }} mr="2" fontWeight="400">
               Desenvolvedor Front End
             </Text>
 
@@ -45,14 +45,14 @@ export function HeroSection() {
 
           <Text
             w={{
-              base: "15rem",
-              sm: "15rem",
-              md: "100%",
-              lg: "22rem",
-              xl: "28.12rem",
+              base: '15rem',
+              sm: '15rem',
+              md: '100%',
+              lg: '22rem',
+              xl: '28.12rem',
             }}
             mt="1rem"
-            fontSize={{ base: "md", md: "xl" }}
+            fontSize={{ base: 'md', md: 'xl' }}
             fontWeight="200"
           >
             Atualmente focando em me especializar em desenvolvimento de

@@ -7,8 +7,8 @@ import {
   PopoverContent,
   PopoverHeader,
   PopoverTrigger,
-} from "@chakra-ui/react";
-import { AiFillInfoCircle } from "react-icons/ai";
+} from '@chakra-ui/react';
+import { AiFillInfoCircle } from 'react-icons/ai';
 
 export function PoppoverInfo() {
   return (
@@ -23,7 +23,7 @@ export function PoppoverInfo() {
           icon={<AiFillInfoCircle />}
           transitionDuration="0.4s"
           _hover={{
-            background: "gray.400",
+            background: 'gray.400',
           }}
         />
       </PopoverTrigger>
@@ -36,7 +36,7 @@ export function PoppoverInfo() {
         backdropFilter="blur( 6px )"
         borderColor="transparent"
         _focus={{
-          boxShadow: "0 8px 32px 0 rgba( 255, 255, 255, 0.25 )",
+          boxShadow: '0 8px 32px 0 rgba( 255, 255, 255, 0.25 )',
         }}
       >
         <PopoverHeader fontWeight="semibold">

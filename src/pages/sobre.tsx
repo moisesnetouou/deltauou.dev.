@@ -1,34 +1,34 @@
-import { Flex, Heading, Image, Text } from "@chakra-ui/react";
+import { Flex, Heading, Image, Text } from '@chakra-ui/react';
 
 export default function Sobre() {
   return (
     <Flex direction="column" minH="100vh" position="relative">
       <Flex
         w={{
-          base: "320px",
-          sm: "320px",
-          md: "600px",
-          lg: "900px",
-          xl: "1120px",
+          base: '320px',
+          sm: '320px',
+          md: '600px',
+          lg: '900px',
+          xl: '1120px',
         }}
-        mt={{ base: "5rem", md: "10rem" }}
+        mt={{ base: '5rem', md: '10rem' }}
         mx="auto"
         mb="2rem"
         justifyContent="space-between"
-        alignItems={{ base: "none", lg: "center" }}
+        alignItems={{ base: 'none', lg: 'center' }}
         flexDir={{
-          base: "column-reverse",
-          lg: "row",
+          base: 'column-reverse',
+          lg: 'row',
         }}
       >
         <Flex
           flexDir="column"
           w={{
-            base: "100%",
-            sm: "100%",
-            md: "500px",
-            lg: "400px",
-            xl: "500px",
+            base: '100%',
+            sm: '100%',
+            md: '500px',
+            lg: '400px',
+            xl: '500px',
           }}
           gap="4"
         >
@@ -59,16 +59,16 @@ export default function Sobre() {
         </Flex>
         <Flex
           h={{
-            base: "200px",
-            lg: "460px",
+            base: '200px',
+            lg: '460px',
           }}
           w={{
-            base: "200px",
-            lg: "460px",
+            base: '200px',
+            lg: '460px',
           }}
           mb={{
-            base: "2rem",
-            lg: "0",
+            base: '2rem',
+            lg: '0',
           }}
         >
           <Image

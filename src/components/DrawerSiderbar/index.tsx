@@ -10,10 +10,10 @@ import {
   Icon,
   Stack,
   Link,
-} from "@chakra-ui/react";
-import { GrMenu } from "react-icons/gr";
-import { BsGithub, BsLinkedin } from "react-icons/bs";
-import { AiFillInstagram } from "react-icons/ai";
+} from '@chakra-ui/react';
+import { GrMenu } from 'react-icons/gr';
+import { BsGithub, BsLinkedin } from 'react-icons/bs';
+import { AiFillInstagram } from 'react-icons/ai';
 
 export function DrawerSiderbar() {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -21,7 +21,7 @@ export function DrawerSiderbar() {
   return (
     <>
       <Button
-        d={{ base: "flex", md: "none" }}
+        d={{ base: 'flex', md: 'none' }}
         position="absolute"
         top="2rem"
         right="2rem"
@@ -48,9 +48,9 @@ export function DrawerSiderbar() {
               <Link
                 href="/"
                 _hover={{
-                  bgClip: "text",
+                  bgClip: 'text',
                   bgGradient:
-                    "linear-gradient(90deg, rgba(0,182,227,1) 0%, rgba(61,252,232,1) 25%)",
+                    'linear-gradient(90deg, rgba(0,182,227,1) 0%, rgba(61,252,232,1) 25%)',
                 }}
               >
                 Home
@@ -58,9 +58,9 @@ export function DrawerSiderbar() {
               <Link
                 href="/sobre"
                 _hover={{
-                  bgClip: "text",
+                  bgClip: 'text',
                   bgGradient:
-                    "linear-gradient(90deg, rgba(0,182,227,1) 0%, rgba(61,252,232,1) 25%)",
+                    'linear-gradient(90deg, rgba(0,182,227,1) 0%, rgba(61,252,232,1) 25%)',
                 }}
               >
                 Sobre
@@ -68,9 +68,9 @@ export function DrawerSiderbar() {
               <Link
                 href="/projetos"
                 _hover={{
-                  bgClip: "text",
+                  bgClip: 'text',
                   bgGradient:
-                    "linear-gradient(90deg, rgba(0,182,227,1) 0%, rgba(61,252,232,1) 25%)",
+                    'linear-gradient(90deg, rgba(0,182,227,1) 0%, rgba(61,252,232,1) 25%)',
                 }}
               >
                 Projetos

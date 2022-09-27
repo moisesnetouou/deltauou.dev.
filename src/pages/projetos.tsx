@@ -1,26 +1,26 @@
-import { Flex, Heading } from "@chakra-ui/react";
-import { CardProject } from "../components/CardProject";
-import { personalProjects } from "../data/personalProjects";
-import { eventProjects } from "../data/eventProjects";
-import { igniteProjects } from "../data/igniteProjects";
+import { Flex, Heading } from '@chakra-ui/react';
+import { CardProject } from '../components/CardProject';
+import { personalProjects } from '../data/personalProjects';
+import { eventProjects } from '../data/eventProjects';
+import { igniteProjects } from '../data/igniteProjects';
 
 export default function Projetos() {
   return (
     <Flex direction="column" minH="100vh" position="relative">
       <Flex
-        mt={{ base: "6rem", md: "10rem" }}
+        mt={{ base: '6rem', md: '10rem' }}
         mb="2rem"
         w={{
-          base: "320px",
-          sm: "320px",
-          md: "600px",
-          lg: "900px",
-          xl: "1120px",
+          base: '320px',
+          sm: '320px',
+          md: '600px',
+          lg: '900px',
+          xl: '1120px',
         }}
         mx="auto"
         flexDirection="column"
       >
-        <Heading mb="2rem" fontSize={{ base: "2xl", md: "3xl" }}>
+        <Heading mb="2rem" fontSize={{ base: '2xl', md: '3xl' }}>
           Pessoais
         </Heading>
         <Flex
@@ -41,7 +41,7 @@ export default function Projetos() {
           ))}
         </Flex>
 
-        <Heading my="2rem" fontSize={{ base: "2xl", md: "3xl" }}>
+        <Heading my="2rem" fontSize={{ base: '2xl', md: '3xl' }}>
           Evento
         </Heading>
         <Flex flexDirection="column" gap="10" borderRadius="5">
@@ -57,7 +57,7 @@ export default function Projetos() {
           ))}
         </Flex>
 
-        <Heading my="2rem" fontSize={{ base: "2xl", md: "3xl" }}>
+        <Heading my="2rem" fontSize={{ base: '2xl', md: '3xl' }}>
           Curso
         </Heading>
         <Flex flexDirection="column" gap="10" borderRadius="5">

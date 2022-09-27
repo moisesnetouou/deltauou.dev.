@@ -1,9 +1,9 @@
-import { Flex, Image, Link, Stack, Text } from "@chakra-ui/react";
+import { Flex, Image, Link, Stack, Text } from '@chakra-ui/react';
 
 export function Header() {
   return (
     <Flex
-      d={{ base: "none", md: "flex" }}
+      d={{ base: 'none', md: 'flex' }}
       borderBottom="1px solid #241F42"
       position="absolute"
       w="100%"
@@ -12,11 +12,11 @@ export function Header() {
     >
       <Flex
         w={{
-          base: "320px",
-          sm: "320px",
-          md: "600px",
-          lg: "900px",
-          xl: "1120px",
+          base: '320px',
+          sm: '320px',
+          md: '600px',
+          lg: '900px',
+          xl: '1120px',
         }}
         m="0 auto"
         justify="space-between"
@@ -40,9 +40,9 @@ export function Header() {
           <Link
             href="/sobre"
             _hover={{
-              bgClip: "text",
+              bgClip: 'text',
               bgGradient:
-                "linear-gradient(90deg, rgba(0,182,227,1) 0%, rgba(61,252,232,1) 25%)",
+                'linear-gradient(90deg, rgba(0,182,227,1) 0%, rgba(61,252,232,1) 25%)',
             }}
           >
             Sobre
@@ -50,9 +50,9 @@ export function Header() {
           <Link
             href="/projetos"
             _hover={{
-              bgClip: "text",
+              bgClip: 'text',
               bgGradient:
-                "linear-gradient(90deg, rgba(0,182,227,1) 0%, rgba(61,252,232,1) 25%)",
+                'linear-gradient(90deg, rgba(0,182,227,1) 0%, rgba(61,252,232,1) 25%)',
             }}
           >
             Projetos

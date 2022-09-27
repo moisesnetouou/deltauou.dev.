@@ -1,6 +1,6 @@
-import { Flex, Heading, Image, Text, Icon, Link } from "@chakra-ui/react";
-import { BsGithub } from "react-icons/bs";
-import { GrDeploy } from "react-icons/gr";
+import { Flex, Heading, Image, Text, Icon, Link } from '@chakra-ui/react';
+import { BsGithub } from 'react-icons/bs';
+import { GrDeploy } from 'react-icons/gr';
 
 interface CardProjectProps {
   bgGradient: string;
@@ -30,15 +30,15 @@ export function CardProject({
       border="1px solid rgba( 255, 255, 255, 0.18 )"
       w="100%"
       h={{
-        base: "100%",
-        lg: "360px",
+        base: '100%',
+        lg: '360px',
       }}
       justifyContent="space-between"
-      padding={{ base: "1.5rem", lg: "2rem" }}
+      padding={{ base: '1.5rem', lg: '2rem' }}
       borderRadius="10"
       flexDirection={{
-        base: "column",
-        lg: "row",
+        base: 'column',
+        lg: 'row',
       }}
       gap="2"
       boxShadow="0 8px 32px 0 rgba( 31, 38, 135, 0.37 )"
@@ -48,8 +48,8 @@ export function CardProject({
     >
       <Flex
         w={{
-          base: "100%",
-          lg: "470px",
+          base: '100%',
+          lg: '470px',
         }}
         border="1px solid #241F42"
         borderRadius="10"
@@ -60,21 +60,21 @@ export function CardProject({
 
       <Flex
         w={{
-          base: "100%",
-          lg: "530px",
+          base: '100%',
+          lg: '530px',
         }}
         flexDirection="column"
         pb="1.5rem"
       >
         <Heading
           mt={{
-            base: "2rem",
-            lg: "0",
+            base: '2rem',
+            lg: '0',
           }}
           mb="1"
           fontSize={{
-            base: "2xl",
-            lg: "3xl",
+            base: '2xl',
+            lg: '3xl',
           }}
           bgClip="text"
           bgGradient={headerTextGradientColor}
@@ -86,9 +86,9 @@ export function CardProject({
           w="100%"
           mb="3"
           fontSize={{
-            base: "sm",
-            md: "md",
-            lg: "md",
+            base: 'sm',
+            md: 'md',
+            lg: 'md',
           }}
           fontWeight="bold"
           color={textColor}
@@ -98,8 +98,8 @@ export function CardProject({
 
         <Heading
           fontSize={{
-            base: "md",
-            lg: "xl",
+            base: 'md',
+            lg: 'xl',
           }}
           color={textHeaderColor}
         >
@@ -109,9 +109,9 @@ export function CardProject({
           w="100%"
           mb="3"
           fontSize={{
-            base: "sm",
-            md: "md",
-            lg: "md",
+            base: 'sm',
+            md: 'md',
+            lg: 'md',
           }}
           fontWeight="bold"
           color={textColor}
@@ -122,8 +122,8 @@ export function CardProject({
         <Heading
           color={textHeaderColor}
           fontSize={{
-            base: "md",
-            lg: "xl",
+            base: 'md',
+            lg: 'xl',
           }}
         >
           Objetivo
@@ -132,9 +132,9 @@ export function CardProject({
           fontWeight="bold"
           w="100%"
           fontSize={{
-            base: "sm",
-            md: "md",
-            lg: "md",
+            base: 'sm',
+            md: 'md',
+            lg: 'md',
           }}
           color={textColor}
         >

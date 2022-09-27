@@ -1,6 +1,6 @@
-import { Flex } from "@chakra-ui/react";
-import Head from "next/head";
-import { HeroSection } from "../components/HeroSection";
+import { Flex } from '@chakra-ui/react';
+import Head from 'next/head';
+import { HeroSection } from '../components/HeroSection';
 
 export default function Home() {
   return (
